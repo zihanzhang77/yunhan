@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云汉的AI官网</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="logo-container">
+            <div class="logo">云汉的AI官网</div>
+        </div>
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="请输入搜索内容">
+            <button class="search-btn" id="baidu-search-btn">百度一下</button>
+        </div>
+
+        <div class="category-container">
+            <h3 class="category-title">AI文案</h3>
+            <div class="buttons-container">
+                <button class="search-btn" id="open-deepseek-btn">DeepSeek</button>
+                <button class="search-btn" id="open-kimi-btn">Kimi</button>
+                <button class="search-btn" id="open-doubao-btn">豆包</button>
+            </div>
+        </div>
+
+        <div class="category-container">
+            <h3 class="category-title">AI图片</h3>
+            <div class="buttons-container">
+                <button class="search-btn" id="open-jimeng-btn">即梦</button>
+                <button class="search-btn" id="open-doubao-img-btn">豆包</button>
+                <button class="search-btn" id="open-liblib-btn">Liblib</button>
+            </div>
+        </div>
+
+        <div class="category-container">
+            <h3 class="category-title">AI视频</h3>
+            <div class="buttons-container">
+                <button class="search-btn" id="open-kling-btn">可灵</button>
+                <button class="search-btn" id="open-hailuo-btn">海螺</button>
+            </div>
+        </div>
+
+        <div class="category-container">
+            <h3 class="category-title">Agent工具</h3>
+            <div class="buttons-container">
+                <button class="search-btn" id="open-ai-remove-bg-btn">AI抠图</button>
+                <button class="search-btn" id="open-ai-video-btn">AI一键成片</button>
+                <button class="search-btn" id="open-ai-batch-img-btn">AI批量生图</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 搜索按钮点击事件
+        document.getElementById('baidu-search-btn').addEventListener('click', function() {
+            const input = document.querySelector('.search-input').value;
+            if (input.trim()) {
+                // 跳转到百度官网搜索
+                window.location.href = 'https://www.baidu.com/s?wd=' + encodeURIComponent(input);
+            }
+        });
+
+        // 输入框回车事件
+        document.querySelector('.search-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const input = this.value;
+                if (input.trim()) {
+                    // 跳转到百度官网搜索
+                    window.location.href = 'https://www.baidu.com/s?wd=' + encodeURIComponent(input);
+                }
+            }
+        });
+
+        // 打开DeepSeek官网按钮点击事件
+        document.getElementById('open-deepseek-btn').addEventListener('click', function() {
+            window.open('https://www.deepseek.com', '_blank');
+        });
+
+        // 打开Kimi官网按钮点击事件
+        document.getElementById('open-kimi-btn').addEventListener('click', function() {
+            window.open('https://kimi.moonshot.cn', '_blank');
+        });
+
+        // 打开豆包官网按钮点击事件
+        document.getElementById('open-doubao-btn').addEventListener('click', function() {
+            window.open('https://www.doubao.com/chat/?channel=dkR31', '_blank');
+        });
+
+        // 打开即梦官网按钮点击事件
+        document.getElementById('open-jimeng-btn').addEventListener('click', function() {
+            window.open('https://jimeng.jianying.com/ai-tool/generate', '_blank');
+        });
+
+        // 豆包生图按钮点击事件
+        document.getElementById('open-doubao-img-btn').addEventListener('click', function() {
+            window.open('https://www.doubao.com/chat/?channel=dkR31', '_blank');
+        });
+
+        // 打开Liblib官网按钮点击事件
+        document.getElementById('open-liblib-btn').addEventListener('click', function() {
+            window.open('https://www.liblib.art/?sourceId=002252&userid=58356801&planid=707282717&keywordid=954475676719&creative=107610595091&bd_vid=12579230259709809169', '_blank');
+        });
+
+        // 打开可灵官网按钮点击事件
+        document.getElementById('open-kling-btn').addEventListener('click', function() {
+            window.open('https://app.klingai.com/cn/image-to-video/frame-mode/new', '_blank');
+        });
+
+        // 打开海螺官网按钮点击事件
+        document.getElementById('open-hailuo-btn').addEventListener('click', function() {
+            window.open('https://hailuoai.com/create', '_blank');
+        });
+
+        // 打开AI抠图网站按钮点击事件
+        document.getElementById('open-ai-remove-bg-btn').addEventListener('click', function() {
+            window.open('https://www.coze.cn/store/agent/7487991492938596402?bot_id=true', '_blank');
+        });
+
+        // AI一键成片按钮点击事件
+        document.getElementById('open-ai-video-btn').addEventListener('click', function() {
+            window.open('https://www.coze.cn/store/agent/7533178089036742665?bot_id=true', '_blank');
+        });
+
+        // 打开AI批量生图网站按钮点击事件
+        document.getElementById('open-ai-batch-img-btn').addEventListener('click', function() {
+            window.open('https://www.coze.cn/store/agent/7533172518950207540?bot_id=true', '_blank');
+        });
+    </script>
+</body>
+</html>
