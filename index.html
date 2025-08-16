@@ -23,6 +23,8 @@
                 <button class="search-btn" id="open-deepseek-btn">DeepSeek</button>
                 <button class="search-btn" id="open-kimi-btn">Kimi</button>
                 <button class="search-btn" id="open-doubao-btn">豆包</button>
+                <button class="search-btn" id="open-chatgpt-btn">ChatGPT</button>
+                <button class="search-btn" id="open-gemini-btn">Genmini</button>
             </div>
         </div>
 
@@ -40,6 +42,7 @@
             <div class="buttons-container">
                 <button class="search-btn" id="open-kling-btn">可灵</button>
                 <button class="search-btn" id="open-hailuo-btn">海螺</button>
+                <button class="search-btn" id="open-veo3-btn">Veo3</button>
             </div>
         </div>
 
@@ -49,6 +52,7 @@
                 <button class="search-btn" id="open-ai-remove-bg-btn">AI抠图</button>
                 <button class="search-btn" id="open-ai-video-btn">AI一键成片</button>
                 <button class="search-btn" id="open-ai-batch-img-btn">AI批量生图</button>
+                <button class="search-btn" id="open-youtube-btn">youtube</button>
             </div>
         </div>
     </div>
@@ -89,6 +93,16 @@
             window.open('https://www.doubao.com/chat/?channel=dkR31', '_blank');
         });
 
+        // 打开ChatGPT按钮点击事件
+        document.getElementById('open-chatgpt-btn').addEventListener('click', function() {
+            window.open('https://chatgpt.com/', '_blank');
+        });
+
+        // 打开Genmini按钮点击事件
+        document.getElementById('open-gemini-btn').addEventListener('click', function() {
+            window.open('https://gemini.google.com/app', '_blank');
+        });
+
         // 打开即梦官网按钮点击事件
         document.getElementById('open-jimeng-btn').addEventListener('click', function() {
             window.open('https://jimeng.jianying.com/ai-tool/generate', '_blank');
@@ -114,6 +128,11 @@
             window.open('https://hailuoai.com/create', '_blank');
         });
 
+        // 打开Veo3官网按钮点击事件
+        document.getElementById('open-veo3-btn').addEventListener('click', function() {
+            window.open('https://veo3.ai/dashboard', '_blank');
+        });
+
         // 打开AI抠图网站按钮点击事件
         document.getElementById('open-ai-remove-bg-btn').addEventListener('click', function() {
             window.open('https://www.coze.cn/store/agent/7487991492938596402?bot_id=true', '_blank');
@@ -127,6 +146,11 @@
         // 打开AI批量生图网站按钮点击事件
         document.getElementById('open-ai-batch-img-btn').addEventListener('click', function() {
             window.open('https://www.coze.cn/store/agent/7533172518950207540?bot_id=true', '_blank');
+        });
+
+        // 打开youtube按钮点击事件
+        document.getElementById('open-youtube-btn').addEventListener('click', function() {
+            window.open('https://www.youtube.com/', '_blank');
         });
     </script>
 </body>
