@@ -38,7 +38,6 @@ body {
     border-radius: 12px;
     box-shadow: 0 0 30px rgba(0, 102, 204, 0.2);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 102, 204, 0.3);
 }
 
 /* Logo样式 */
